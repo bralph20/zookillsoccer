@@ -1,7 +1,7 @@
-/** 
- * Create ES6 Classes.
- * To make this work, you must be running the Babel transpiler, 
- * and watching for changes in this file with browserify. Two 
+/**
+ * Create my ES6 Classes.
+ * To make this work, you must be running the Babel transpiler,
+ * and watching for changes in this file with browserify. Two
  * Terminal windows need to be open:
  * 1. one window where you typed the command "grunt"
  * 2. one window where you typed the command "npm start"
@@ -15,7 +15,7 @@ class GamePiece {
         this.uuid = this.setId();
     }
 
-    /** 
+    /**
      * Generate a unique ID for every game object.
      * @link http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
      */
@@ -32,14 +32,14 @@ class GamePiece {
         return uuid;
     }
 
-    /** 
+    /**
      * Return the given name of this object.
      */
     getName () {
         return this.name;
     }
 
-    /** 
+    /**
      * Return the unique id of this object.
      */
     getId () {
@@ -47,7 +47,7 @@ class GamePiece {
     }
 }
 
-/** 
+/**
  * Arena objects derive directly from generic GamePiece
  */
 class Arena extends GamePiece {
@@ -56,7 +56,7 @@ class Arena extends GamePiece {
     }
 }
 
-/** 
+/**
  * Sample file configuration.
  */
 var config = {
@@ -71,5 +71,3 @@ console.log(x.getName());
 // Make a test Arena object.
 var y = new Arena(cred);
 console.log(y.getName());
-
-
